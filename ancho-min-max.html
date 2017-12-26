@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ancho máximo y mínimo</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<style>
+		div{
+			width: 50%;
+			height: 100px;
+			border: 1px solid #000;
+		}
+
+		.caja{
+			max-width: 400px;/*Si le quitas el max-width y le agregas un margin left grande verás que sobre pasa la mitad de la pantalla aunque le pongas 50% a los div en general*/
+			min-width: 200px;
+			background: blue;
+			margin: 20px 80px;
+		}
+
+		p{
+			background: white;
+			margin: 35px 100px 10px 100px;
+			text-align: center; 
+			padding: 10px;
+
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="caja">
+		<p>Hola mundo</p>
+	</div>
+	<div></div>
+</body>
+</html>
