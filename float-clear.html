@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Float & clear</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<style>
+	
+	.borde{
+		border:1px solid black;
+	}	
+
+	section{
+		float: left;
+		width: 60%;
+		height: 300px;
+		background: orange;
+		margin: 10px;
+		
+	}
+
+	aside{
+		float: right;
+		width: 30%;
+		height: 500px;
+		background: blue;
+		margin: 10px;
+	}
+
+	footer{
+		clear: both;
+		background: lime;
+		margin: 10px;
+	}
+	</style>
+</head>
+<body>
+	<section class="borde">esta es el section</section>
+
+	<aside class="borde">este es el aside</aside>
+
+	<footer class="borde">Este es el footer con el clear</footer>
+</body>
+</html>
