@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>5 cuadros</title>
+	<style>
+
+	/* ---------------- un cuadro con 4 cuadros dentro ------------------*/
+	.padre{
+		width: 400px;
+		height: 400px;
+		border: solid 1px black;
+		background: orange;
+		margin: 10px;
+	}
+
+	div > div{
+	
+	}
+
+	.hijo1{
+		width: 80px;
+		height: 80px;
+		background: lime;
+		margin: 30px 50px 0 50px; 
+	}
+
+	.hijo2{
+		width: 80px;
+		height: 80px;
+		background: red;
+		float: right;
+		margin-top: -80px;
+		margin-right: 50px;
+	}
+
+	.hijo3{
+		width: 80px;
+		height: 80px;
+		background: navy;
+		float: right;
+		margin-top: 180px;
+		margin-right: 50px;	
+	}
+
+	.hijo4{
+		width: 80px;
+		height: 80px;
+		background: pink;
+		margin: 180px 50px 0 50px;
+		 		
+	}
+
+	</style>
+</head>
+<body>
+	<div class="padre">
+		<div class="hijo1"></div>
+		<div class="hijo2"></div>
+		<div class="hijo3"></div>
+		<div class="hijo4"></div>
+	</div>
+</body>
+</html>
