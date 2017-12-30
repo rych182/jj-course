@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Z-index</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<style>
+	.padre{
+		width: 250px;
+		height: 250px;
+		margin: 20px;
+		background: orange;
+		overflow: hidden;
+	}
+
+	.hijo1{
+		width: 25px;
+		height: 25px;
+		background: yellow;
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		margin-top: -10px;
+	}
+
+	.oculto{
+		visibility: hidden;
+	}
+		
+	.hijo2{
+		width: 50px;
+		height: 50px;
+		background: green;
+		position: absolute;
+	}
+
+	.hijo3{
+		width: 50px;
+		height: 50px;
+		background: purple;
+		position: absolute;
+		margin-left: 40px;
+		margin-top: -20px;
+		z-index: -2;
+	}
+
+	.transparencia{
+		opacity: 0.5;
+	}
+	</style>
+</head>
+<body>
+	
+	<div class="padre">
+		<div class="hijo2 transparencia"></div>
+		<div class="hijo1"></div>
+		<div class="hijo1 oculto"></div>
+		<div class="hijo1"></div>
+		<div class="hijo3"></div>
+	</div>
+
+</body>
+</html>
