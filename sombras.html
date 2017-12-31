@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalilze.css">
+	<style>
+
+	div{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		box-shadow: 10px 10px 0px red;
+	}
+
+	div#uno{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		box-shadow: 10px 20px 0px red;
+	}
+
+	div#dos{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		box-shadow: 10px -20px 0px red;
+	}
+
+	div#tres{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		box-shadow: -10px -20px 0px red;
+	}
+
+	div#cuatro{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		box-shadow: 10px 0px 0px red;
+	}
+
+	div#cinco{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		box-shadow: 10px 10px 5px red;
+	}
+
+	div#seis{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		box-shadow: -10px 10px 5px red;
+	}
+
+	div#siete{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		box-shadow: -10px -10px 5px red;
+	}
+
+	div#ocho{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		box-shadow: inset 10px 10px 5px red;
+	}
+
+	div#nueve{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		box-shadow: inset -10px -10px 5px red;
+	}
+
+	div#diez{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		text-shadow: 10px 10px 0px red;
+	}
+
+	div#doce{
+		height: 200px;
+		width: 200px;
+		background: white;
+		color: white;
+		margin: 50px;
+		text-align: center;
+	}
+
+	div#trece{
+		height: 200px;
+		width: 200px;
+		background: white;
+		border: solid 1px black;
+		margin: 50px;
+		text-align: center;
+		box-shadow: 10px 10px 5px red,
+					-10px -10px 5px green;
+	}
+
+	div#catorce{
+		height: 200px;
+		width: 200px;
+		background: orange;
+		margin: 50px;
+		text-align: center;
+		box-shadow: 1px 1px 0px gray,
+					2px 2px 0px gray,
+					3px 3px 0px gray,
+					4px 4px 0px gray,
+					5px 5px 0px black,
+					6px 6px 0px black;
+	}
+
+	p{
+		position: relative;
+		top: 90px;
+		font-size: 20px;
+	}
+
+	p#once{
+		position: relative;
+		top: 90px;
+		font-size: 20px;
+		text-shadow:0px 0px 10px red;
+	}
+	
+	p#doce{
+		position: relative;
+		top: 90px;
+		font-size: 20px;
+		text-shadow:0px 0px 10px navy;
+	}
+
+	
+	</style>
+</head>
+<body>
+	<div>
+		<p>Mensaje</p>
+	</div>
+	
+	<hr>
+	<h1>1-Sombra con coordenadas en Y positivas</h1>
+	<div id="uno">
+		<p>Mensaje</p>
+	</div>
+
+	<hr>
+	<h1>2-Sombra con coordenadas en Y negativas</h1>
+	<div id="dos">
+		<p>Mensaje</p>
+	</div>
+
+	<hr>
+	<h1>3-Sombra con coordenadas en X y Y negativas</h1>
+	<div id="tres">
+		<p>Mensaje</p>
+	</div>
+
+	<hr>
+	<h1>4-Sombra de un solo lado</h1>
+	<div id="cuatro">
+		<p>Mensaje</p>
+	</div>
+
+	<hr>
+	<h1>5-Sombra con difuminación</h1>
+	<div id="cinco">
+		<p>Mensaje</p>
+	</div>
+
+	<hr>
+	<h1>6-Sombra con difuminación en angulo negativo en X</h1>
+	<div id="seis">
+		<p>Mensaje</p>
+	</div>
+
+	<hr>
+	<h1>7-Sombra con difuminación en angulo negativo en X y Y</h1>
+	<div id="siete">
+		<p>Mensaje</p>
+	</div>
+
+	<hr>
+	<h1>8-Sombras hacia dentro en positivo</h1>
+	<div id="ocho">
+		<p>Mensaje</p>
+	</div>
+
+	<hr>
+	<h1>9-Sombras hacia dentro en negativo</h1>
+	<div id="nueve">
+		<p>Mensaje</p>
+	</div>	
+
+	<hr>
+	<h1>10-Sombra en el texto</h1>
+	<div id="diez">
+		<p>Mensaje</p>
+	</div>
+
+	<hr>
+	<h1>11-Difuminado en el texto sin coordenadas que parece brillo</h1>
+	<div>
+		<p id="once">Mensaje</p>
+	</div>	
+
+	<hr>
+	<h1>12-Difuminado con fondo blanco</h1>
+	<div id="doce">
+		<p id="doce">Mensaje</p>
+	</div>
+
+	<hr>
+	<h1>13-Dos sombras distintas</h1>
+	<div id="trece">
+		<p>Mensaje</p>
+	</div>
+
+	<hr>
+	<h1>14-Sombras con efecto relieve</h1>
+	<div id="catorce">
+		<p>Mensaje</p>
+	</div>
+</body>
+</html>
