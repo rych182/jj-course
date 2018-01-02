@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Transform</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<style>
+	/*
+		Tranform tiene: rotate, skew, translate y scale
+	*/
+		div{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: rotate(45deg);
+		}
+		div#uno{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: rotate(20deg);
+			transform-origin:top left;
+		}
+
+		div#dos{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: rotate(20deg);
+			transform-origin:top right;
+		}
+
+		div#dos{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: rotate(20deg);
+			transform-origin:bottom center;
+		}
+
+		div#tres{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: rotate(20deg);
+			transform-origin:bottom center;
+		}
+
+		div#cuatro{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: skewY(20deg);
+		}
+
+		div#cinco{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: skewX(20deg);
+		}
+
+		div#seis{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: translateX(100px);
+		}
+
+		div#siete{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: translatey(-100px);
+		}
+
+		div#ocho{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: translateY(0px);
+		}
+
+		div.aux{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: translatey(50px);
+		}
+
+	
+
+		div.aux1{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: translatey(0px);
+			transform: scale(0.8);
+		}
+
+		div.aux2{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: translatey(0px);
+			transform: scale(0.8, 1.3);
+		}
+
+
+		div.aux3:hover{
+			height: 200px;
+			width: 200px;
+			background: orange;
+			border: 1px solid black;
+			margin: 50px;
+			transform: translatey(0px);
+			transform: scale(0.8, 1.3);
+		}
+	</style>
+
+</head>
+<body>
+	<h1>1-Rotando tomando como eje el centro</h1>
+	<p>Se gira tomando como referencia las manecillas del reloj.</p>
+	<div id=""></div>
+	<hr>
+
+	<h1>2-Rotando tomando como eje la esquina superior izquierda</h1>
+	<p>Se gira tomando como referencia las manecillas del reloj.</p>
+	<div id="uno"></div>
+	<hr>
+
+	<h1>3-Rotando tomando como eje la esquina superior derecha</h1>
+	<p>Se gira tomando como referencia las manecillas del reloj.</p>
+	<div id="dos"></div>
+	<hr>
+
+	<h1>4-Rotando tomando como eje el centro inferior.</h1>
+	<p>Se gira tomando como referencia las manecillas del reloj.</p>
+	<div id="tres"></div>
+	<hr>
+
+	<h1>5-Torcer 20 la figura 20grados en el eje Y.</h1>
+	<p></p>
+	<div id="cuatro"></div>
+	<hr>
+
+	<h1>6-Torcer 20 la figura 20grados en el eje X.</h1>
+	<p></p>
+	<div id="cinco"></div>
+	<hr>
+	
+	<h1>7-Translate mueve un número de pixeles el cuadrado de manera horizontal.</h1>
+	<p></p>
+	<div id="seis"></div>
+	<hr>
+
+	<h1>8-Translate mueve un número de pixeles el cuadrado de manera vertical de manera positiva y negativa.</h1>
+	<p></p>
+	<div id="siete"></div>
+	<hr>
+
+	<h1>9-Translate</h1>
+	<p>El translate no afecta al flujo de colocación de los elementos del resto de cosas que hay en la página web, a menos que al elemento que “muevas” le pongas margin. </p>
+	<div class="aux"></div>
+	<div id="ocho"></div>
+	<hr>
+
+	<h1>10-scale 1.2 </h1>
+	<p>Te pone todo a la escala que le digas y la posición de otro elemento no se ve influenciada por si esta cambia.</p>
+	<div class="aux1"></div>
+	<div id="ocho"></div>
+	<hr>
+
+	<h1>11-scale en eje X y Y </h1>
+	<p>Te pone todo a la escala que le digas y la posición de otro elemento no se ve influenciada por si esta cambia, también se puede alterar por ejes.</p>
+	<div class="aux2"></div>
+	<div id="ocho"></div>
+	<hr>
+
+	<h1>12-Scale con hover</h1>
+	<p>Te pone todo a la escala que le digas al momento de pasar el mouse, normalmente se hace acompañado de un animation.</p>
+	<div class="aux3"></div>
+	<div id="ocho"></div>
+	<hr>
+</body>
+</html>
