@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Transiciones</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<style>
+		
+		div#uno:hover{
+			width: 200px;
+			height: 200px;
+			border: solid 1px black;
+			background: orange;
+			margin: 50px;
+			transition: all 3s linear;
+			transform: rotate(90deg);
+			background: green;
+			
+		}
+
+		div#dos:hover{
+			width: 200px;
+			height: 200px;
+			border: solid 1px black;
+			background: orange;
+			margin: 50px;
+			transition: all 3s ease;
+			transform: rotate(90deg);
+			background: green;
+			
+		}
+
+		div#tres:hover{
+			width: 200px;
+			height: 200px;
+			border: solid 1px black;
+			background: orange;
+			margin: 50px;
+			transition: all 3s ease-in;
+			transform: rotate(90deg);
+			background: green;
+			
+		}
+
+		div#cuatro:hover{
+			width: 200px;
+			height: 200px;
+			border: solid 1px black;
+			background: orange;
+			margin: 50px;
+			transition: all 3s ease-out;
+			transform: rotate(90deg);
+			background: green;
+			
+		}
+
+		div#cinco:hover{
+			width: 200px;
+			height: 200px;
+			border: solid 1px black;
+			background: orange;
+			margin: 50px;
+			transition: all 3s ease-in-out;
+			transform: rotate(90deg);
+			background: green;
+			
+		}
+
+		div#seis:hover{
+			width: 200px;
+			height: 200px;
+			border: solid 1px black;
+			background: orange;
+			margin: 50px;
+			transition: all 3s ease-in-out;
+			transform: rotate(90deg) skewY(45deg);
+			background: green;					
+		}
+
+		div#siete:hover{
+			width: 200px;
+			height: 200px;
+			border: solid 1px black;
+			background: orange;
+			margin: 50px;
+			transition: all 3s ease-in-out;
+			transform: rotate(90deg) skewX(45deg);
+			background: green;					
+		}
+
+		div#ocho:hover{
+			width: 200px;
+			height: 200px;
+			border: solid 1px black;
+			background: orange;
+			margin: 50px;
+			transition: all 3s ease-in-out;
+			transform: rotate(90deg) skewX(45deg);
+			background: green;
+			transition-delay: 1s;					
+		}
+
+		div{
+			width: 200px;
+			height: 200px;
+			border: solid 1px black;
+			background: orange;
+			margin: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	
+
+	<h1>Transicion</h1>
+	<p>El transition se le aplica a lo que quieres que cambie</p>
+	<p><b>transition: all 3s linear;</b> así de declara  y después de eso, las caracteristicas que quieres que tenga.</p>
+	<div id="uno"></div>
+	<hr>
+
+	<h1>Transicion con ease</h1>
+	<p><b>ease</b> comienza la animación normal, después acelera y termina lento</p>
+	<p><b>transition: all 3s linear;</b> así de declara  y después de eso, las caracteristicas que quieres que tenga.</p>
+	<div id="dos"></div>
+	<hr>
+
+
+	<h1>Transicion con ease-in</h1>
+	<p><b>ease-in</b> comienza la animación normal y termina acelerando</p>
+	<p><b>transition: all 3s linear;</b> así de declara  y después de eso, las caracteristicas que quieres que tenga.</p>
+	<div id="tres"></div>
+	<hr>
+
+	<h1>Transicion con ease-out</h1>
+	<p><b>ease-out</b> comienza acelerando y termina lento</p>
+	<p><b>transition: all 3s linear;</b> así de declara  y después de eso, las caracteristicas que quieres que tenga.</p>
+	<div id="cuatro"></div>
+	<hr>
+
+	<h1>Transicion con ease-in-out</h1>
+	<p><b>ease-in-out</b> comienza lento, después rápido y termina lento</p>
+	<p><b>transition: all 3s linear;</b> así de declara y después de eso, las caracteristicas que quieres que tenga.</p>
+	<div id="cinco"></div>
+	<hr>
+
+	<h1>Transicion con rotación y deformación en Y</h1>
+	<p><b>rotation y skew</b></p>
+	<p><b>transition: all 3s linear;</b> así de declara y después de eso, las caracteristicas que quieres que tenga.</p>
+	<div id="seis"></div>
+	<hr>
+
+	<h1>Transicion con rotación y deformación en X</h1>
+	<p><b>rotation y skew</b></p>
+	<p><b>transition: all 3s linear;</b> así de declara y después de eso, las caracteristicas que quieres que tenga.</p>
+	<div id="siete"></div>
+	<hr>
+
+	<h1>Transicion con retraso(<b>delay</b>)</h1>
+	<p><b>rotation y skew</b></p>
+	<p><b>transition: all 3s linear;</b> así de declara y después de eso, las caracteristicas que quieres que tenga.</p>
+	<div id="ocho"></div>
+	<hr>
+</body>
+</html>
