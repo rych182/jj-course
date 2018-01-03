@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<style>
+		div{
+			width: 80%;
+			height: 100px;
+			margin: 20px;
+			display: inline-block;
+			background-image: url("img/ace.jpg");
+			background-size: 100% 100%; 
+		}
+
+	body{
+		background: yellow;
+	}
+/*Registra la pantalla y comprueba si
+la anchura es "mínima o mas, se hace todo lo que esté dentro de las llaves"*/
+@media screen and (min-width: 480px){
+	body{
+		background: green;
+	}
+
+	div{
+		width: 40%;
+		margin: 4%;
+		
+	}
+}
+
+@media screen and (min-width: 767px){
+	body{
+		background: pink;
+		
+	}
+
+	div{
+		display: block; /*Esto afecta de 767px hacia arriba*/
+
+	}
+}
+
+@media screen and (min-width: 950px){
+	body{
+		background: navy;
+	}
+
+	div{
+		display: inline-block;
+		width: 25%;
+		margin: 2%;
+	}
+}
+
+
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
